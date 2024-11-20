@@ -18,13 +18,23 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
-        setNav(!nav)
-    }
+      setNav(!nav)
+    };
 
     useEffect(() => {
       animateNavbar();
+
+      const handleResize = () => {
+        if (window.innerWidth >= 768) {
+          setNav(false);
+        }
+       };
+
+        window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+  
   return (
     <header className='navbar px-6 md:px-12 py-0 flex justify-between items-center h-24 text-white'>
         <h1 className='titleLogo w-full text-4xl font-montserrat font-bold text-[#00ba7c]'>
