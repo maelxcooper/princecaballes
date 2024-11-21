@@ -10,6 +10,9 @@ module.exports = {
         montserrat: ['Montserrat', 'sans-serif'],
         questrial: ['Questrial', 'sans-serif']
       },
+      fontSize: {
+        '3xl-cm': '3.125rem', 
+      },
     },
   },
   plugins: [],
