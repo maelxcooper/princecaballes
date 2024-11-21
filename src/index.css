@@ -6,13 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 body {
-  background: rgb(21, 32, 43, 1);
-  font-family: "Questrial", sans-serif;
-  overflow-x: hidden;
-  height: 100%;
+  line-height: inherit;
+  margin: 0;
 }
 
 html {
   overflow-x: hidden;
-  height: 100%;
 }
