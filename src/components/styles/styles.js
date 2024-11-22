@@ -28,7 +28,9 @@ export const buttonHoverEffect = css`
     padding: 0.75rem 1rem;
     color: var(--priColor);
     border-radius: 4px;
-    font-size: var(--fz-sm);
+    font-size: var(--fz-xs);
+    line-height: 1;
+    margin-left: 16px;
 
 
     &:hover {

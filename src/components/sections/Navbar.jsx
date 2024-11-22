@@ -37,19 +37,19 @@ const Navbar = () => {
 
   return (
     <header className='navbar px-6 md:px-12 py-0 flex justify-between items-center h-24'>
-      <h1 className='titleLogo w-full text-4xl font-montserrat font-bold text-[#00f4a3]'>
-        <a href="/">Mael</a>
+      <h1 className='titleLogo w-full text-4xl font-montserrat font-bold '>
+        <a className='text-[#00f4a3] hover:text-[var(--lightest-slate)]' href="/">Mael</a>
       </h1>
 
-      <div className='flex justify-between items-center gap-4'>
+      <div className='flex justify-between items-center'>
         <ul className='navbar-list hidden md:flex'>
-          <li className='p-4'><StyledLink href="#home">Home</StyledLink></li>
-          <li className='p-4'><StyledLink href="#about">About</StyledLink></li>
-          <li className='p-4'><StyledLink href="#projects">Projects</StyledLink></li>
-          <li className='p-4'><StyledLink href="#contact">Contact</StyledLink></li>
+          <li className='py-2 px-4'><StyledLink href="#about">About</StyledLink></li>
+          <li className='py-2 px-4'><StyledLink href="#experience">Experience</StyledLink></li>
+          <li className='py-2 px-4'><StyledLink href="#work">Work</StyledLink></li>
+          <li className='py-2 px-4'><StyledLink href="#contact">Contact</StyledLink></li>
         </ul>
 
-        <ButtonStyled className='cvbtn hidden md:block' href="#cv">
+        <ButtonStyled className='cvbtn hidden md:block' href="/assets/pdf/Prince-Caballes-CV.pdf" target='_blank' rel='noreferrer'>
           Resume
         </ButtonStyled>
 
@@ -61,13 +61,13 @@ const Navbar = () => {
           <h1 className='w-full text-3xl font-montserrat font-bold text-[var(--priColor)] m-4'>Mael</h1>
 
           <ul className='uppercase p-4'>
-            <li className='p-4 border-b border-gray-600'><a href="#home">Home</a></li>
-            <li className='p-4 border-b border-gray-600'><a href="#about">About</a></li>
-            <li className='p-4 border-b border-gray-600'><a href="#projects">Projects</a></li>
-            <li className='p-4'><a href="#contact">Contact</a></li>
+            <li className='p-4 border-b border-gray-600'><a className='hover:text-[var(--priColor)]' href="#about">About</a></li>
+            <li className='p-4 border-b border-gray-600'><a className='hover:text-[var(--priColor)]' href="#experience">Experience</a></li>
+            <li className='p-4 border-b border-gray-600'><a className='hover:text-[var(--priColor)]' href="#work">Work</a></li>
+            <li className='p-4'><a className='hover:text-[var(--priColor)]' href="#contact">Contact</a></li>
           </ul>
 
-          <a className="relative inline-block w-[40%]  px-4 py-3 border border-[var(--priColor)] rounded-md text-[var(--priColor)] ml-4 transition-[var(--translation)] hover:translate-x-[-5px] hover:translate-y-[-5px] hover:shadow-[4px_4px_0_0_#00ba7c]" href="#cv">
+          <a className="relative inline-block w-[40%]  px-4 py-3 border border-[var(--priColor)] rounded-md text-[var(--priColor)] ml-4 transition-[var(--translation)] hover:translate-x-[-5px] hover:translate-y-[-5px] hover:shadow-[4px_4px_0_0_#00ba7c]" href="/assets/pdf/Prince-Caballes-CV.pdf" target='_blank' rel='noreferrer'>
             Resume
           </a>
 
