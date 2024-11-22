@@ -36,8 +36,8 @@ const Navbar = () => {
 
 
   return (
-    <header className='navbar px-6 md:px-12 py-0 flex justify-between items-center h-24 text-white'>
-      <h1 className='titleLogo w-full text-4xl font-montserrat font-bold text-[#00ba7c]'>
+    <header className='navbar px-6 md:px-12 py-0 flex justify-between items-center h-24'>
+      <h1 className='titleLogo w-full text-4xl font-montserrat font-bold text-[#00f4a3]'>
         <a href="/">Mael</a>
       </h1>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
           Resume
         </ButtonStyled>
 
-        <div onClick={handleNav} className='block md:hidden cursor-pointer'>
+        <div onClick={handleNav} className='block md:hidden cursor-pointer '>
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
 

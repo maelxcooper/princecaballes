@@ -3,7 +3,7 @@ import { css } from 'styled-components';
 const variables = css`
   :root {
     --bodyColor: rgb(21, 32, 43, 1);
-    --priColor: #00ba7c;
+    --priColor: #00f4a3;
     --dark-navy: #020c1b;
     --navy: #0a192f;
     --light-navy: #112240;

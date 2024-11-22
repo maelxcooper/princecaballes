@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: var(--font-sans);
     line-height: inherit;
     margin: 0;
+    color: var(--slate);
   }
 `;
 
