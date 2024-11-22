@@ -7,21 +7,21 @@ export const animateNavbar = () => {
   timeline.fromTo(
     ".titleLogo",
     { opacity: 0, y: -100 },
-    { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+    { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }
   )
 
 
   timeline.fromTo(
     ".navbar-list li",
     { opacity: 0, y: -30 },
-    { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: "power2.out" }
+    { opacity: 1, y: 0, duration: 0.4, stagger: 0.2, ease: "power2.out" }
   );
 
 
   timeline.fromTo(
     ".cvbtn",
     { opacity: 0, scale: 0.5 },
-    { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }
+    { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
   );
 
 };
@@ -34,9 +34,9 @@ export const animateHeroText = () => {
     {
       y: '0%',
       opacity: 1,
-      duration: 1.5,
+      duration: 1,
       ease: 'power2.out',
-      delay: 3.5,
+      delay: 2,
     }
   );
 
@@ -46,9 +46,9 @@ export const animateHeroText = () => {
     {
       y: '0%',
       opacity: 1,
-      duration: 1.5,
+      duration: 1,
       ease: 'power2.out',
-      delay: 4,
+      delay: 2.5,
     }
   );
 
@@ -58,9 +58,9 @@ export const animateHeroText = () => {
     {
       scale: 1,
       opacity: 1,
-      duration: 1.5,
+      duration: 1,
       ease: 'power2.out',
-      delay: 4.5,
+      delay: 3,
     }
   );
 }
