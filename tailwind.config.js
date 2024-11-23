@@ -15,6 +15,9 @@ module.exports = {
       fontSize: {
         '3xl-cm': '3.125rem',
       },
+      writingMode: {
+        'vertical-rl': 'vertical-rl',
+      },
     },
   },
   plugins: [

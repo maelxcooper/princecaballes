@@ -39,3 +39,33 @@ export const buttonHoverEffect = css`
     transform: translate(-4px, -4px);
     }
 `
+
+
+export const sidebarStyleEffect = css`
+    margin: 20px auto 0;
+    padding: 10px 10px 0 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0 auto;
+      background: var(--lightest-slate);
+    }
+      
+    &:hover {
+      color: var(--priColor);
+    }
+
+
+`
