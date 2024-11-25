@@ -17,11 +17,13 @@ const Sidebar = () => {
     },[])
 
     return (
-        <div className='hidden md:block fixed w-10 right-[1.5rem] bottom-0 z-10 text-[var(--lightest-slate)]'>
+    <div className='relative'>
+        <div className='hidden md:block fixed w-10 right-[1rem] bottom-0 z-10 text-[var(--lightest-slate)]'>
             <StyledSidebar className='email__styledLink relative flex flex-col items-center'>
                 <a href="mailto:caballesprince3211@gmail.com">caballesprince3211@gmail.com</a>
             </StyledSidebar>
-        </div >
+        </div>
+    </div>
     )
 }
 
