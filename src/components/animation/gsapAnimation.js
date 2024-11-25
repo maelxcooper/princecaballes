@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 
+// Header Section
 export const animateNavbar = () => {
   const timeline = gsap.timeline();
 
@@ -26,7 +27,24 @@ export const animateNavbar = () => {
 
 };
 
+//Sidebar Section
 
+export const sidebarAnimate = () => {
+  gsap.fromTo(
+    '.email__styledLink',
+    { y: '100%', opacity: 0 },
+    {
+      y: '0%',
+      opacity: 1,
+      duration: 1,
+      ease: 'power2.out',
+      delay: 3.5,
+    }
+    
+  );
+}
+
+// Hero Section
 export const animateHeroText = () => {
   gsap.fromTo(
     ".introName",

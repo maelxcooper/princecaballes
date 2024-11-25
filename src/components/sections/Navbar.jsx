@@ -53,12 +53,12 @@ const Navbar = () => {
           Resume
         </ButtonStyled>
 
-        <div onClick={handleNav} className='block md:hidden relative z-20 cursor-pointer'>
+        <div onClick={handleNav} className='block md:hidden relative z-30 cursor-pointer'>
           {nav ? <AiOutlineClose size={20} style={{ color: 'var(--priColor)' }} /> : <AiOutlineMenu size={20} style={{ color: 'var(--priColor)' }} />}
         </div>
 
-        <div className={nav ? 'fixed right-0 top-0 bg-black/60 w-full h-[100dvh] ease-in-out duration-500 z-10' : 'fixed left-[-100%]'}></div>
-        <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[var(--light-navy)] ease-in-out duration-500 z-10' : 'fixed left-[-100%]'}>
+        <div className={nav ? 'fixed right-0 top-0 bg-black/60 w-full h-[100dvh] ease-in-out duration-500 z-20' : 'fixed left-[-100%]'}></div>
+        <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[var(--light-navy)] ease-in-out duration-500 z-20' : 'fixed left-[-100%]'}>
           <h1 className='w-full text-3xl font-montserrat font-bold text-[var(--priColor)] m-4'>Mael</h1>
 
           <ul className='uppercase p-4'>
