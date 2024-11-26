@@ -4,6 +4,7 @@ import Sidebar from './components/sections/Sidebar';
 import Hero from './components/sections/Hero';
 import GlobalStyle from './components/styles/globalStyles';
 
+
 function App() {
   return (
     <div className='relative bg-[var(--navy)]'>

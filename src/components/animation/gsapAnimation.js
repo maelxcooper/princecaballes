@@ -20,7 +20,7 @@ export const animateNavbar = () => {
 
 
   timeline.fromTo(
-    ".cvbtn",
+    ".cvBtnWrapper",
     { opacity: 0, scale: 0.5 },
     { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }
   );
@@ -30,8 +30,11 @@ export const animateNavbar = () => {
 //Sidebar Section
 
 export const sidebarAnimate = () => {
-  gsap.fromTo(
-    '.email__styledLink',
+
+  const timeline = gsap.timeline();
+
+  timeline.fromTo(
+    '.socialsLink',
     { y: '100%', opacity: 0 },
     {
       y: '0%',
@@ -40,9 +43,23 @@ export const sidebarAnimate = () => {
       ease: 'power2.out',
       delay: 3.5,
     }
-    
+
+  );
+
+  timeline.fromTo(
+    '.email__styledLink',
+    { y: '100%', opacity: 0 },
+    {
+      y: '0%',
+      opacity: 1,
+      duration: 1,
+      ease: 'power2.out',
+    }
+
   );
 }
+
+
 
 // Hero Section
 export const animateHeroText = () => {

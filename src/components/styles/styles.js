@@ -1,9 +1,6 @@
 import { css } from 'styled-components';
 
 export const hoverUnderlineEffect = css`
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
 
   &:after {
     content: '';
@@ -31,6 +28,7 @@ export const buttonHoverEffect = css`
     font-size: var(--fz-xs);
     line-height: 1;
     margin-left: 16px;
+    transition: var(--transition);
 
 
     &:hover {
@@ -71,4 +69,17 @@ export const sidebarStyleEffect = css`
       background: var(--lightest-slate);
     }
 
+`
+
+
+export const ulStyleEffect = css`
+
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+  }
 `

@@ -49,10 +49,11 @@ const Navbar = () => {
           <li className='py-2 px-4'><StyledLink href="#contact">Contact</StyledLink></li>
         </ul>
 
-        <ButtonStyled className='cvbtn hidden md:block' href="/assets/pdf/Prince-Caballes-CV.pdf" target='_blank' rel='noreferrer'>
-          Resume
-        </ButtonStyled>
-
+        <div className='cvBtnWrapper relative'>
+          <ButtonStyled className='cvbtn hidden md:block' href="/assets/pdf/Prince-Caballes-CV.pdf" target='_blank' rel='noreferrer'>
+            Resume
+          </ButtonStyled>
+        </div>
         <div onClick={handleNav} className='block md:hidden relative z-30 cursor-pointer'>
           {nav ? <AiOutlineClose size={20} style={{ color: 'var(--priColor)' }} /> : <AiOutlineMenu size={20} style={{ color: 'var(--priColor)' }} />}
         </div>
