@@ -37,7 +37,7 @@ const Sidebar = () => {
 
     return (
         <div className='relative'>
-            <div className='socialsLink hidden md:block fixed w-10 left-[0.5rem] bottom-0 text-[var(--lightest-slate)]'>
+            <div className='socialsLink hidden md:block fixed w-10 left-[2.5rem] bottom-0 text-[var(--lightest-slate)]'>
                 <UlStyled className='flex flex-col items-center m-0 p-0'>
                     <li><a className='p-2.5 hover:translate-y-[-3px] hover:text-[var(--priColor)]' href="https://github.com/maelxcooper"><Github /></a></li>
                     <li><a className='p-2.5 hover:translate-y-[-3px] hover:text-[var(--priColor)]' href="https://www.instagram.com/maelxcooper/"><Instagram /></a></li>
