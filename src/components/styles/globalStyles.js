@@ -10,8 +10,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: var(--font-sans);
-    line-height: inherit;
-    margin: 0;
     color: var(--slate);
   }
 `;
