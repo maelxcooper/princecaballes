@@ -31,7 +31,7 @@ function App() {
   }, [handleMouseMove]);
 
   return (
-    <div className='relative bg-[var(--navy)]'>
+    <div className='relative bg-slate-900'>
       <GlobalStyle />
 
       <div
