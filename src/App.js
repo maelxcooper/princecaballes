@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { Navbar, Sidebar, Hero, About } from './components';
+import { Navbar, Sidebar, Hero } from './components';
 import GlobalStyle from './components/styles/globalStyles';
 
 
