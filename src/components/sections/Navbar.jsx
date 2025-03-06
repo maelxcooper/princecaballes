@@ -3,22 +3,30 @@ import { hoverUnderlineEffect, buttonHoverEffect } from '../styles/styles';
 import styled from 'styled-components';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { animateNavbar } from '../animation/gsapAnimation';
+import { Link } from 'react-scroll';
 
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   ${hoverUnderlineEffect};
+  cursor: pointer;
 `;
+
+const SmoothStyledLink = ({ to, children, ...props }) => (
+  <StyledLink to={to} smooth={true} duration={500} {...props} onClick={() => { window.history.pushState(null, null, `#${to}`); }}>
+    {children}
+  </StyledLink>
+);
 
 const ButtonStyled = styled.a`
   ${buttonHoverEffect};
-`
-
+`;
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
+
   const handleNav = () => {
-    setNav(!nav)
+    setNav(!nav);
   };
 
   useEffect(() => {
@@ -30,23 +38,30 @@ const Navbar = () => {
       }
     };
 
+
+
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
-
   return (
+
+
+
     <header className='navbar px-6 md:px-12 py-0 flex justify-between items-center h-24'>
       <h1 className='titleLogo w-full text-4xl font-montserrat font-bold '>
         <a className='text-[#00f4a3] hover:text-[var(--lightest-slate)]' href="/">Mael</a>
       </h1>
 
+
       <div className='flex justify-between items-center'>
         <ul className='navbar-list hidden md:flex'>
-          <li className='py-2 px-4'><StyledLink href="#about">About</StyledLink></li>
-          <li className='py-2 px-4'><StyledLink href="#experience">Experience</StyledLink></li>
-          <li className='py-2 px-4'><StyledLink href="#work">Work</StyledLink></li>
-          <li className='py-2 px-4'><StyledLink href="#contact">Contact</StyledLink></li>
+          <li className='py-2 px-4'><SmoothStyledLink to="about">About</SmoothStyledLink></li>
+          <li className='py-2 px-4'><SmoothStyledLink to="experience">Experience</SmoothStyledLink></li>
+          <li className='py-2 px-4'><SmoothStyledLink to="work">Work</SmoothStyledLink></li>
+          <li className='py-2 px-4'><SmoothStyledLink to="contact">Contact</SmoothStyledLink></li>
         </ul>
 
         <div className='cvBtnWrapper relative'>
@@ -72,12 +87,11 @@ const Navbar = () => {
           <a className="relative inline-block w-[40%]  px-4 py-3 border border-[var(--priColor)] rounded-md text-[var(--priColor)] ml-4 transition-[var(--translation)] hover:translate-x-[-5px] hover:translate-y-[-5px] hover:shadow-[4px_4px_0_0_#00ba7c]" href="/assets/pdf/Prince-Caballes-CV.pdf" target='_blank' rel='noreferrer'>
             Resume
           </a>
-
         </div>
-
       </div>
     </header>
-  )
-}
 
-export default Navbar
+  );
+};
+
+export default Navbar;

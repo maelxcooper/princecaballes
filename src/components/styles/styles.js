@@ -13,9 +13,14 @@ export const hoverUnderlineEffect = css`
     transition: width 0.3s ease-in-out;
   }
 
+  &:hover {
+    color: var(--priColor);
+  }
+
   &:hover:after {
     width: 100%;
   }
+
 `;
 
 export const buttonHoverEffect = css`

@@ -27,6 +27,35 @@ export const animateNavbar = () => {
 
 };
 
+export const animateNavbarScroll = () => {
+  const navbar = document.querySelector('.navbar');
+  let lastScrollY = 0;
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      gsap.to(navbar, { y: '-100%', duration: 0.1, ease: 'power2.out' });
+
+    } else if (currentScrollY < lastScrollY) {
+      gsap.to(navbar, { y: '0%', duration: 0.1, ease: 'power2.out' });
+    }
+
+    lastScrollY = currentScrollY;
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll)
+  };
+
+};
+
+
+
+
+
+
 //Sidebar Section
 
 export const sidebarAnimate = () => {
