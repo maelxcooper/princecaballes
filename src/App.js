@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { Navbar, Sidebar, Hero } from './components';
+import { Navbar, Sidebar, Hero, About } from './components';
 import GlobalStyle from './components/styles/globalStyles';
 
 
@@ -31,7 +31,7 @@ function App() {
   }, [handleMouseMove]);
 
   return (
-    <div className='relative bg-slate-900'>
+    <div className="relative bg-slate-900 text-[var(--slate)]">
       <GlobalStyle />
 
       <div
@@ -43,9 +43,9 @@ function App() {
 
       <Navbar />
       <Sidebar />
-      <main className='max-w-[1600px] w-full mx-auto px-6 md:px-28'>
+      <main className="max-w-[1600px] w-full mx-auto px-6 md-plus:px-28">
         <Hero />
-        {/* <About /> */}
+        <About />
       </main>
     </div>
   );
