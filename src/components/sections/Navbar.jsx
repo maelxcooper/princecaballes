@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { hoverUnderlineEffect, buttonHoverEffect } from '../styles/styles';
 import styled from 'styled-components';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { animateNavbar } from '../animation/gsapAnimation';
+import { animateNavbar } from '../animation/navbarAnimation';
 import { Link } from 'react-scroll';
 
 

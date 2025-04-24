@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useCallback } from 'react'
-import { Navbar, Sidebar, Hero, About } from './components';
-import GlobalStyle from './components/styles/globalStyles';
-
+import React, { useEffect, useState, useCallback } from "react";
+import { Navbar, Sidebar, Hero, About } from "./components";
+import GlobalStyle from "./components/styles/globalStyles";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -17,7 +16,6 @@ function App() {
       } else {
         window.removeEventListener("mousemove", handleMouseMove);
       }
-
     };
 
     handleResize();
@@ -27,7 +25,7 @@ function App() {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", handleResize);
-    }
+    };
   }, [handleMouseMove]);
 
   return (

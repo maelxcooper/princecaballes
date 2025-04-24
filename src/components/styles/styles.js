@@ -138,30 +138,27 @@ export const anchorEffect = `
 
 
 export const styledImage = css`
-  width: 300px;
-  max-width: calc(100% - 60px);
-  background: #fffbaf;
-  position: relative;
-  border: 2px solid #111;
+   --s: 20px;
+  --b: 1px;
+  --w: 300px;
 
-  &::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 20px;
-  left: 20px;
-  border-radius: inherit;
-  background: repeating-linear-gradient(
-    45deg,
-    #d4c481,
-    #d4c481 2px,
-    transparent 2px,
-    transparent 6px
-  );
-  transition: all 0.3s ease;
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2 * var(--s));
+  --_g: var(--priColor) var(--b), #0000 0 calc(100% - var(--b)),
+    var(--priColor) 0;
+  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+  outline: calc(var(--w) / 2) solid #0009;
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+  outline: var(--b) solid var(--priColor);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
+  transform: scale(1.1);
 }
-
-  }
 `;
