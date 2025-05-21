@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: var(--font-sans);
+    background-color: #0f172a;
     color: var(--slate);
     line-height: 1.8;
     font-size: var(--fz-md);
