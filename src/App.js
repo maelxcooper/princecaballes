@@ -29,7 +29,7 @@ function App() {
   }, [handleMouseMove]);
 
   return (
-    <div className="relative bg-slate-900 text-[var(--slate)]">
+    <div className="relative text-[var(--slate)]">
       <GlobalStyle />
 
       <div
