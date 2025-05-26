@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { ReactTyped } from "react-typed";
-import { animateHeroText } from '../animation/gsapAnimation';
+import { animateHeroText } from '../animation';
 
 
 
@@ -19,8 +19,8 @@ const Hero = () => {
                 <h1 className='devName md:text-5xl sm:text-4xl text-2xl stroke-text font-bold font-montserrat md:py-1'>Prince Caballes.</h1>
                 <div className='posTitle flex justify-center items-center flex-wrap md:py-4'>
                     <p className='md:text-3xl-cm sm:text-4xl  text-2xl stroke-text font-montserrat font-bold'> I'm a</p>
-                    <ReactTyped className='md:text-3xl-cm sm:text-4xl text-2xl text-[var(--priColor)]  font-montserrat font-bold italic pl-2'
-                        strings={['Front End Developer', 'Seo', 'Virtual Assistant']}
+                    <ReactTyped className='md:text-3xl-cm sm:text-4xl text-2xl text-[var(--priColor)]  font-montserrat font-bold italic pl-2 -mt-[0.875rem]'
+                        strings={['Front End Developer', 'Digital Specialist', 'Virtual Assistant']}
                         typeSpeed={140}
                         backSpeed={90}
                         loop />

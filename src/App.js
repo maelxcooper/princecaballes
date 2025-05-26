@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { Navbar, Sidebar, Hero, About } from "./components";
+import { Navbar, Sidebar, Hero, About, Experience } from "./components";
 import GlobalStyle from "./components/styles/globalStyles";
 
 function App() {
@@ -44,6 +44,7 @@ function App() {
       <main className="max-w-[1600px] w-full mx-auto px-6 md-plus:px-28">
         <Hero />
         <About />
+        <Experience />
       </main>
     </div>
   );

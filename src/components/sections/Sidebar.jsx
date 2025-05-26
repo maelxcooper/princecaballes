@@ -2,11 +2,8 @@ import React, { useEffect } from 'react';
 import { sidebarStyleEffect, ulStyleEffect } from '../styles/styles';
 import styled from 'styled-components';
 import { handleExternalLinks } from '../utils/extraLinks';
-import { sidebarAnimate } from '../animation/gsapAnimation';
-import Github from '../icons/Github';
-import Instagram from '../icons/Instagram';
-import Twitter from '../icons/Twitter';
-import Linkedin from '../icons/Linkedin';
+import { sidebarAnimate } from '../animation';
+import { Github, Instagram, Linkedin, Twitter } from '../icons'
 
 
 
