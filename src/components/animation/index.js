@@ -1,3 +1,3 @@
 export { animateHeroText } from './heroAnimation';
-export { animateNavbar } from './navbarAnimation';
+export { animateNavbar, animateNavbarScroll } from './navbarAnimation';
 export { sidebarAnimate } from './sidebarAnimation';
