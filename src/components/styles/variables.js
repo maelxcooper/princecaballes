@@ -24,14 +24,14 @@ const variables = css`
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     --font-main: 'Questrial', sans-serif;
 
-    --fz-xxs: 12px;
-    --fz-xs: 13px;
-    --fz-sm: 14px;
-    --fz-md: 16px;
-    --fz-lg: 18px;
-    --fz-xl: 20px;
-    --fz-xxl: 22px;
-    --fz-heading: 32px;
+    --fz-xxs: 0.75rem;     /* 12px */
+    --fz-xs: 0.8125rem;    /* 13px */
+    --fz-sm: 0.875rem;     /* 14px */
+    --fz-md: 1rem;         /* 16px /
+    --fz-lg: 1.125rem;     /* 18px */
+    --fz-xl: 1.25rem;      /* 20px */
+    --fz-xxl: 1.375rem;    /* 22px */
+    --fz-heading: 2rem;    /* 32px */
 
     --border-radius: 4px;
     --nav-height: 100px;

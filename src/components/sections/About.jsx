@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components';
 import { sectionHeading, anchorEffect, styledImage } from '../styles/styles';
 import { handleExternalLinks } from '../utils/extraLinks';
+import { aboutAnimate } from '../animation';
 import mePic from '../images/me.jpg';
 
 
@@ -37,12 +38,13 @@ const About = () => {
 
     useEffect(() => {
         handleExternalLinks();
+        aboutAnimate();
     }, []);
 
     const skills = ['HTML5','CSS3','JavaScript', 'Sass','Tailwind CSS','jQuery','WordPress CMS']
 
     return (
-        <div id='about' className='max-w-[1200px] w-full mx-auto py-16 px-6 md:px-14'>
+        <div id='about' className='max-w-[75rem] w-full mx-auto py-16 px-6 md:px-14'>
                 <StyledHeading className='md:text-3xl text-2xl font-bold font-montserrat text-[var(--light-slate)] mt-[10px] mb-[40px] mx-0'>About Me</StyledHeading>
 
             <div className='inner grid grid-cols-1 md:grid-cols-2 gap-10'>

@@ -3,6 +3,7 @@ import gsap from 'gsap';
 
 
 
+
 // Hero Section
 export const animateHeroText = () => {
   gsap.fromTo(

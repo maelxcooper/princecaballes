@@ -14,7 +14,7 @@ const Hero = () => {
 
     return (
         <div id='Hero' className='h-[110vh]'>
-            <div className='max-w-[1600px]  mt-[-96px] px-6  md:px-28  h-screen w-full mx-auto text-center flex flex-col justify-center'>
+            <div className='max-w-[100rem]  mt-[-96px] px-6  md:px-28  h-screen w-full mx-auto text-center flex flex-col justify-center'>
                 <p className='introName md:text-[18px] text-[var(--priColor)] font-normal p-2'>Hello, My name is</p>
                 <h1 className='devName md:text-5xl sm:text-4xl text-2xl stroke-text font-bold font-montserrat md:py-1'>Prince Caballes.</h1>
                 <div className='posTitle flex justify-center items-center flex-wrap md:py-4'>

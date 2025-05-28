@@ -41,7 +41,7 @@ function App() {
 
       <Navbar />
       <Sidebar />
-      <main className="max-w-[1600px] w-full mx-auto px-6 md-plus:px-28">
+      <main className="max-w-[100rem] w-full mx-auto px-6 md-plus:px-28">
         <Hero />
         <About />
         <Experience />
